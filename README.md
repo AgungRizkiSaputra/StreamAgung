@@ -70,3 +70,5 @@ Jadi intinya, Langkah 13 membuat cara untuk mengirim error ke stream, dan Langka
 - Langkah 2, variabel transformer diisi dengan menggunakan StreamTransformer<int, int>.fromHandlers. Ini artinya kita bisa menentukan bagaimana data, error, dan penutupan stream akan ditangani. Misalnya, setiap data yang masuk akan dikalikan 10 sebelum diteruskan. Kalau ada error, bukan error yang diteruskan, melainkan nilai -1 yang dikirimkan. Setelah stream selesai, bagian sink akan ditutup.
 
 - Langkah 3, transformer yang sudah dibuat diterapkan pada stream. Setelah itu, data yang sudah dimodifikasi oleh transformer didengarkan dengan listen(). Kalau ada data yang masuk, data itu akan disimpan ke dalam variabel lastNumber melalui setState, yang nantinya akan memicu pembaruan tampilan. Kalau ada error, nilai lastNumber akan diubah jadi -1. Jadi, data dari stream bisa diubah dulu sebelum ditampilkan dalam aplikasi.
+
+<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP3soal8.gif"  width="150px" >
