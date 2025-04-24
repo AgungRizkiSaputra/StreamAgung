@@ -52,3 +52,11 @@ listen itu langsung nanggepin data yang masuk, cocok buat update UI secara real-
 - Langkah 10 berfungsi membuat angka acak dari 0 sampai 9, lalu mengirimkannya ke stream melalui method addNumberToSink, sehingga angka itu bisa langsung ditangkap oleh listener di Langkah 8. Jadi, Langkah 8 menangani penerimaan data, dan Langkah 10 mengirimkan datanya.
 
 <img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP2soal6.gif"  width="150px" >
+
+### P2: Jawaban Soal 7
+
+- Langkah 13, dibuat fungsi addError() yang tugasnya ngirim error ke stream. Ini seperti mengirim sinyal bahwa terjadi kesalahan di aliran data.
+
+- Langkah 15, fungsinya memicu error secara sengaja ke dalam stream.
+
+Jadi intinya, Langkah 13 membuat cara untuk mengirim error ke stream, dan Langkah 15 menjalankan error tersebut lewat pemanggilan fungsi tadi.
