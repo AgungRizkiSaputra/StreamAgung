@@ -38,3 +38,7 @@
 ### P1: Jawaban Soal 4
 
 <img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP1soal4.gif"  width="150px" >
+
+### P1: Jawaban Soal 5
+
+listen itu langsung nanggepin data yang masuk, cocok buat update UI secara real-time. Sedangkan await for nunggu data satu-satu secara berurutan dalam fungsi async, lebih cocok buat proses data yang butuh ketertiban.
