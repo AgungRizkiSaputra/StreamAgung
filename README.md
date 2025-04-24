@@ -72,3 +72,11 @@ Jadi intinya, Langkah 13 membuat cara untuk mengirim error ke stream, dan Langka
 - Langkah 3, transformer yang sudah dibuat diterapkan pada stream. Setelah itu, data yang sudah dimodifikasi oleh transformer didengarkan dengan listen(). Kalau ada data yang masuk, data itu akan disimpan ke dalam variabel lastNumber melalui setState, yang nantinya akan memicu pembaruan tampilan. Kalau ada error, nilai lastNumber akan diubah jadi -1. Jadi, data dari stream bisa diubah dulu sebelum ditampilkan dalam aplikasi.
 
 <img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP3soal8.gif"  width="150px" >
+
+# Praktikum 4 : Subscribe ke Stream Events
+
+### P4: Jawaban Soal 9
+
+- langkah 2, kita buat stream untuk mengalirkan angka secara terus-menerus. Kita ambil controller-nya, terus dengarkan stream-nya. Setiap kali ada angka baru masuk, simpan angka itu ke variabel lastNumber pakai setState() biar UI-nya ikut berubah.
+
+- langkah 6, kita berhenti mendengarkan stream-nya dengan cara memanggil subscription.cancel(). Ini dilakukan saat tidak butuh data lagi, misalnya widget di-dispose.
