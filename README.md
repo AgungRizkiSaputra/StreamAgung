@@ -1,7 +1,5 @@
 # Praktikum 1 : Dart Stream
 
-## Soal 1
-
 ### P1: Jawaban Soal 1
 
     @override
