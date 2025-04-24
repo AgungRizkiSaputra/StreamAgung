@@ -37,4 +37,4 @@
 
 ### P1: Jawaban Soal 4
 
-<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP1soal4.gif"  width="150px">
+<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP1soal4.gif"  width="200px" height="100">
