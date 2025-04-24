@@ -60,3 +60,13 @@ listen itu langsung nanggepin data yang masuk, cocok buat update UI secara real-
 - Langkah 15, fungsinya memicu error secara sengaja ke dalam stream.
 
 Jadi intinya, Langkah 13 membuat cara untuk mengirim error ke stream, dan Langkah 15 menjalankan error tersebut lewat pemanggilan fungsi tadi.
+
+# Praktikum 3 : Injeksi Data ke Stream
+
+### P3: Jawaban Soal 8
+
+- Langkah 1, dibuat variabel transformer yang bertipe StreamTransformer. Ini digunakan untuk ngubah data yang datang dari stream. Kata kunci late dipakai karena variabel ini baru akan diisi nilainya nanti, tapi dipastikan sudah terisi sebelum dipakai.
+
+- Langkah 2, variabel transformer diisi dengan menggunakan StreamTransformer<int, int>.fromHandlers. Ini artinya kita bisa menentukan bagaimana data, error, dan penutupan stream akan ditangani. Misalnya, setiap data yang masuk akan dikalikan 10 sebelum diteruskan. Kalau ada error, bukan error yang diteruskan, melainkan nilai -1 yang dikirimkan. Setelah stream selesai, bagian sink akan ditutup.
+
+- Langkah 3, transformer yang sudah dibuat diterapkan pada stream. Setelah itu, data yang sudah dimodifikasi oleh transformer didengarkan dengan listen(). Kalau ada data yang masuk, data itu akan disimpan ke dalam variabel lastNumber melalui setState, yang nantinya akan memicu pembaruan tampilan. Kalau ada error, nilai lastNumber akan diubah jadi -1. Jadi, data dari stream bisa diubah dulu sebelum ditampilkan dalam aplikasi.

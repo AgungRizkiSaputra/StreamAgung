@@ -25,7 +25,7 @@ class ColorStream {
 }
 
 class NumberStream {
-  final StreamController<int> controller = StreamController<int>();
+  final StreamController<int> controller = StreamController<int>.broadcast();
 
   void addNumberToSink(int newNumber) {
     controller.sink.add(newNumber);
