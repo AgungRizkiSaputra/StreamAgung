@@ -1,16 +1,13 @@
-# flutter_application_1
+# Praktikum 1 : Dart Stream
 
-A new Flutter project.
+## Soal 1
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### P1: Jawaban Soal 1
+    @override
+      Widget build(BuildContext context) {
+        return MaterialApp(
+          title: 'Stream Agung',
+          theme: ThemeData(primarySwatch: Colors.deepPurple),
+          home: const StreamHomePage(),
+        );
+      }
