@@ -30,3 +30,9 @@
             Colors.green,
         ];
     }
+
+### P1: Jawaban Soal 3
+
+    - Keyword yield\* ini dipakai buat "ngalirin" semua data dari stream lain ke stream yang lagi kita buat, jadi semacam nerusin isi dari stream lain tanpa harus ngatur satu-satu.
+
+    - Maksud dari perintanya itu bikin aliran data (stream) yang setiap detiknya ngeluarin satu warna dari daftar colors, terus warna itu dipilih berdasarkan index yang muter-muter terus pakai t % colors.length biar nggak keluar dari batas array. Jadi, tiap detik dia bakal kirim warna berikutnya dari list, terus balik lagi ke awal kalau udah sampai akhir, gitu terus kayak muter-muter.
