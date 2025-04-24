@@ -82,3 +82,5 @@ Jadi intinya, Langkah 13 membuat cara untuk mengirim error ke stream, dan Langka
 - langkah 6, kita berhenti mendengarkan stream-nya dengan cara memanggil subscription.cancel(). Ini dilakukan saat tidak butuh data lagi, misalnya widget di-dispose.
 
 - langkah 8, kita buat angka acak dari 0 sampai 9. Kalau stream controller-nya masih aktif, angka itu dikirim ke stream. Tapi kalau udah ditutup (closed), lastNumber di-set jadi -1 buat nunjukin kalau udah tidak ada data lagi yang bisa dikirim.
+
+<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP4soal9.gif"  width="150px" >
