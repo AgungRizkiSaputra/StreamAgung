@@ -101,4 +101,4 @@ Karena disini melakuka dua kali subscription (listen) ke stream yang sama, tanpa
 
 Hasilnya, setiap kali ada data baru yang masuk ke stream, kedua listener akan nerima data tersebut dan memprosesnya, menyebabkan output yang berulang dua kali.
 
-<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP5soal11.gif" width="150px"
+<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP5soal11.gif" width="150px">
