@@ -84,3 +84,21 @@ Jadi intinya, Langkah 13 membuat cara untuk mengirim error ke stream, dan Langka
 - langkah 8, kita buat angka acak dari 0 sampai 9. Kalau stream controller-nya masih aktif, angka itu dikirim ke stream. Tapi kalau udah ditutup (closed), lastNumber di-set jadi -1 buat nunjukin kalau udah tidak ada data lagi yang bisa dikirim.
 
 <img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP4soal9.gif"  width="150px" >
+
+# Praktikum 5 : Multiple Stream Subscription
+
+### P5: Jawaban Soal 10
+
+Error ini muncul karena stream udah didengarkan lebih dari satu kali, dan Stream di Dart hanya bisa didengarkan satu kali secara default, kecuali itu adalah BroadcastStream.
+
+### P5: Jawaban Soal 11
+
+Karena disini melakuka dua kali subscription (listen) ke stream yang sama, tanpa perbedaan perilaku di keduanya.
+
+- stream.listen akan menambahkan listener baru ke stream.
+
+- Dan disini menambahkan 2 listener (subscription dan subscription2) yang keduanya melakukan hal yang sama menambahkan angka ke values.
+
+Hasilnya, setiap kali ada data baru yang masuk ke stream, kedua listener akan nerima data tersebut dan memprosesnya, menyebabkan output yang berulang dua kali.
+
+<img src="https://github.com/AgungRizkiSaputra/StreamAgung/blob/main/image/GIFP5soal11.gif" width="150px"
